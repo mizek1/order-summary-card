@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <style>
+    :root {
+      --pale-blue: hsl(225, 100%, 94%);
+      --very-pale-blue: hsl(225, 100%, 98%);
+      --bright-blue: hsl(245, 75%, 52%);
+      --desaturated-blue: hsl(224, 23%, 55%);
+      --dark-blue: hsl(223, 47%, 23%);
+    }
+
+    body {
+      font-family: 'Red Hat Display', sans-serif;
+      background: var(--pale-blue);
+      margin: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: center;
+      color: var(--desaturated-blue);
+      padding: 8px 30px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      color: var(--dark-blue);
+      font-weight: 900;
+    }
+
+    a {
+      color: var(--bright-blue);
+    }
+
+    a:hover {
+      color: var(--desaturated-blue)
+    }
+
+    .card-container {
+      width: 375px;
+      border-radius: 20px;
+      background: white;
+      margin: 10px;
+    }
+
+    .card-header {
+      background-image: url('./images/illustration-hero.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 20px 20px 0 0;
+      height: 200px;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-order-plan {
+      padding: 15px;
+      border-radius: 15px;
+      background: var(--very-pale-blue);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .card-order-plan-name {
+      font-weight: 900;
+      color: var(--dark-blue);
+    }
+
+    .card-order-plan-price {
+      color: var(--desaturated-blue);
+    }
+
+    .payment-button {
+      padding: 18px;
+      color: white;
+      background: var(--bright-blue);
+      margin-top: 25px;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 15px;
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+
+    .payment-button:hover {
+      background: var(--desaturated-blue);
+    }
+
+    .cancel-order {
+      color: var(--desaturated-blue);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 18px;
+      margin-top: 8px;
+    }
+
+    .cancel-order-link {
+      cursor: pointer;
+    }
+
+    .cancel-order-link:hover {
+      color: var(--dark-blue);
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .align-center {
+      align-items: center;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .space-around {
+      justify-content: space-around;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-row align-center justify-center" style="width: 100%;">
+    <main class="card-container">
+      <div class="card-header"></div>
+      <div class="card-body">
+        <h1>Order Summary</h1>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+        </p>
+        <div class="card-order-plan">
+          <div class="flex-row justify-center">
+            <img src="images/icon-music.svg" />
+            <div class="flex-column space-around" style="margin-left: 25px;">
+              <div class="card-order-plan-name">Annual Plan</div>
+              <div class="card-order-plan-price">$59.99/year</div>
+            </div>
+          </div>
+          <div>
+            <a href="#" style="font-weight: 700;">
+              Change
+            </a>
+          </div>
+        </div>
+        <div class="payment-button flex-row justify-center">
+          Proceed to Payment
+        </div>
+        <div class="cancel-order flex-row justify-center">
+          <span class="cancel-order-link">Cancel Order</span>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div class=" attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/mizek1">Danilo Alves</a>.
+    </div>
+  </footer>
+</body>
+
+</html>
