@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Here!](https://github.com/mizek1/order-summary-card/blob/master/index.html)
+- Live Site URL: [Here!](https://mizek1.github.io/order-summary-card/)
 
 ## My process
 
