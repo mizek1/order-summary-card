@@ -18,6 +18,7 @@
       --bright-blue: hsl(245, 75%, 52%);
       --desaturated-blue: hsl(224, 23%, 55%);
       --dark-blue: hsl(223, 47%, 23%);
+      --lilac: #766cf1;
     }
 
     body {
@@ -25,7 +26,6 @@
       background: var(--pale-blue);
       margin: 0;
       width: 100%;
-      height: auto;
     }
 
     p {
@@ -47,7 +47,16 @@
     }
 
     a:hover {
-      color: var(--desaturated-blue)
+      color: var(--lilac);
+      text-decoration: none;
+    }
+
+    .container {
+      height: 100vh;
+      background: url(./images/pattern-background-mobile.svg) var(--pale-blue);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top;
     }
 
     .card-container {
@@ -102,7 +111,7 @@
     }
 
     .payment-button:hover {
-      background: var(--desaturated-blue);
+      background: var(--lilac);
     }
 
     .cancel-order {
@@ -118,7 +127,7 @@
     }
 
     .cancel-order-link:hover {
-      color: var(--dark-blue);
+      color: var(--lilac);
     }
 
     .flex-row {
@@ -151,14 +160,15 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
   </style>
 </head>
 
 <body>
-  <div class="flex-row align-center justify-center" style="width: 100%;">
+  <div class="container flex-column align-center justify-center">
     <main class="card-container">
-      <div class="card-header"></div>
-      <div class="card-body">
+      <section class="card-header"></section>
+      <section class="card-body">
         <h1>Order Summary</h1>
         <p>
           You can now listen to millions of songs, audiobooks, and podcasts on any
@@ -184,15 +194,15 @@
         <div class="cancel-order flex-row justify-center">
           <span class="cancel-order-link">Cancel Order</span>
         </div>
-      </div>
+      </section>
     </main>
+    <footer>
+      <section class=" attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/mizek1">Danilo Alves</a>.
+      </section>
+    </footer>
   </div>
-  <footer>
-    <div class=" attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/mizek1">Danilo Alves</a>.
-    </div>
-  </footer>
 </body>
 
 </html>
